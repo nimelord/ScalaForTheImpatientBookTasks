@@ -3,8 +3,7 @@ object TestTasks {
 
   def main(args: Array[String]) {
 
-    val str = "Welcome to the Scala world!"
-    println(str)
+    println("Welcome to the Scala world!")
 
     T2_1_Sign().perform
 

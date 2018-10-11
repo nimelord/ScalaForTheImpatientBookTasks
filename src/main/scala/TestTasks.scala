@@ -7,5 +7,7 @@ object TestTasks {
     println(str)
 
     T2_1_Sign().perform
+
+    T2_4_DecrementCycle().perform
   }
 }

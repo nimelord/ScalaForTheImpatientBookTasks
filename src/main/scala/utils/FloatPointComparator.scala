@@ -1,4 +1,6 @@
-import scala.math._
+package utils
+
+import scala.math.abs
 
 trait FloatPointComparator {
 

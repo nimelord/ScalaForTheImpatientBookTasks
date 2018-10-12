@@ -1,3 +1,5 @@
+package t2
+
 import org.scalatest.FlatSpec
 
 class T2_4_DecrementCycleSpec extends FlatSpec {

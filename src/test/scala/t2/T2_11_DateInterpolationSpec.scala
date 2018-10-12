@@ -1,3 +1,5 @@
+package t2
+
 import java.time.LocalDate
 
 import org.scalatest.FlatSpec

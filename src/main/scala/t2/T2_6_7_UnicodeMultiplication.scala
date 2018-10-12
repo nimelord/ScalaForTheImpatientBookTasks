@@ -1,3 +1,5 @@
+package t2
+
 object T2_6_7_UnicodeMultiplication {
 
 	def multiFor(string: String): Long = {

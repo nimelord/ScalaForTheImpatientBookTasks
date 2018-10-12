@@ -1,3 +1,5 @@
+package t2
+
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
@@ -34,4 +36,9 @@ object T2_11_DateInterpolation {
 
 class T2_11_DateInterpolation {
 
+	def perform {
+		val date = LocalDate.of(2005, 1, 19)
+		val strDate = T2_11_DateInterpolation.format(date)
+		println(s"LocalDate($date) formated via custom interpolator as '$strDate'.")
+	}
 }

@@ -1,4 +1,6 @@
-import T2_10_ComplicatedRecursion._
+package t2
+
+import t2.T2_10_ComplicatedRecursion.pow
 
 object T2_10_ComplicatedRecursion {
 
@@ -27,6 +29,6 @@ class T2_10_ComplicatedRecursion {
 		val x = 12
 		val n = 14
 		val res = pow(x, n)
-		print (s"Result of pow($x, $n) = $res.")
+		println(s"Result of pow($x, $n) = $res.")
 	}
 }

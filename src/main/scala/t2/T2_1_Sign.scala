@@ -1,4 +1,6 @@
-import T2_1_Sign._
+package t2
+
+import t2.T2_1_Sign.sign
 
 import scala.util.Random
 

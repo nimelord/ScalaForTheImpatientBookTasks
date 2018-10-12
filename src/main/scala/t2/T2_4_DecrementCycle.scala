@@ -1,4 +1,6 @@
-import T2_4_DecrementCycle._
+package t2
+
+import t2.T2_4_DecrementCycle.cycleValues
 
 object T2_4_DecrementCycle {
 

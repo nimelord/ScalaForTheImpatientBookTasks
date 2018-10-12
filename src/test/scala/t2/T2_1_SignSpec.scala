@@ -1,3 +1,5 @@
+package t2
+
 import org.scalatest._
 
 class T2_1_SignSpec extends FlatSpec {

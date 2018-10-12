@@ -3,7 +3,7 @@ import T2_4_DecrementCycle._
 object T2_4_DecrementCycle {
 
   def cycleValues: Array[Int] = {
-    val seq = for (i <- 0 to 9; value = 10 -i) yield value
+	  val seq = for (i <- 0 to 10; value = 10 - i) yield value
     seq.toArray
   }
 
@@ -15,8 +15,8 @@ class T2_4_DecrementCycle {
   def perform: Unit = {
 
     for (i <- cycleValues) {
-      print (f"${i} ")
+	    print(s"$i ")
     }
-
+	  print("\n")
   }
 }

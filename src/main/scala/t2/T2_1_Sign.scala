@@ -8,7 +8,7 @@ object T2_1_Sign {
 
   def sign(value: Int): Int = if (value > -1) 1 else -1;
 
-  def apply() : T2_1_Sign = new T2_1_Sign
+  def apply(): T2_1_Sign = new T2_1_Sign
 }
 
 

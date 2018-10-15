@@ -32,8 +32,8 @@ class T3_4_SignSort {
   val r = new Random(System.currentTimeMillis)
 
   def perform: Unit = {
-    val arr = (for (i <- 0 until 20) yield (r.nextInt(100) - 50)).toArray
+    val arr = (for (_ <- 0 until 20) yield (r.nextInt(100) - 50)).toArray
     val res = sort(arr)
-    print(s"Random array(${arr.mkString(", ")}) signSorted: ${res.mkString(", ")}")
+    println(s"Random array(${arr.mkString(", ")}) signSorted: ${res.mkString(", ")}")
   }
 }

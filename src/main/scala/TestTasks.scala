@@ -1,5 +1,5 @@
 import t2._
-import t3.{T3_1_RangeByCycle, T3_2_3_ElementPairReplacer}
+import t3.{T3_1_RangeByCycle, T3_2_3_ElementPairReplacer, T3_4_SignSort}
 
 object TestTasks {
 
@@ -23,5 +23,6 @@ object TestTasks {
     println("\n\nTasks of Chapter #3:")
     T3_1_RangeByCycle().perform
     T3_2_3_ElementPairReplacer().perform
+    T3_4_SignSort().perform
   }
 }

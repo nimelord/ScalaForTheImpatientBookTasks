@@ -1,5 +1,5 @@
 import t2._
-import t3.T3_1_RangeByCycle
+import t3.{T3_1_RangeByCycle, T3_2_ElementPairReplacer}
 
 object TestTasks {
 
@@ -22,5 +22,6 @@ object TestTasks {
   def runChapter3Tasks {
     println("\n\nTasks of Chapter #3:")
     T3_1_RangeByCycle().perform
+    T3_2_ElementPairReplacer().perform
   }
 }

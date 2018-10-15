@@ -1,7 +1,7 @@
 package t2
 
 import org.scalatest.FlatSpec
-import utils._
+import util._
 
 class T2_10_ComplicatedRecursionSpec extends FlatSpec with FloatPointComparator {
 

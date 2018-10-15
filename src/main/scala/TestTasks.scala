@@ -1,5 +1,5 @@
 import t2._
-import t3.{T3_1_RangeByCycle, T3_2_3_ElementPairReplacer, T3_4_SignSort, T3_5_AverageOfArrayValues}
+import t3._
 
 object TestTasks {
 
@@ -25,5 +25,6 @@ object TestTasks {
     T3_2_3_ElementPairReplacer().perform
     T3_4_SignSort().perform
     T3_5_AverageOfArrayValues().perform
+    T3_6_ReverseOrder().perform
   }
 }

@@ -11,7 +11,7 @@ object TestTasks {
   }
 
   def runChapter2Tasks {
-    println("\n\nTasks of Chapter #2:")
+    printChapter(2)
     T2_1_Sign().perform
     T2_4_DecrementCycle().perform
     T2_6_7_UnicodeMultiplication().perform
@@ -20,12 +20,17 @@ object TestTasks {
   }
 
   def runChapter3Tasks {
-    println("\n\nTasks of Chapter #3:")
+    printChapter(3)
     T3_1_RangeByCycle().perform
     T3_2_3_ElementPairReplacer().perform
     T3_4_SignSort().perform
     T3_5_AverageOfArrayValues().perform
     T3_6_ReverseOrder().perform
     T3_7_DistinctValuesFromArray().prform
+    T3_8_RemoveNegativeValuesExceptFirst().perform
+  }
+
+  def printChapter(num: Int) {
+    println("\n\n\n    ***    Tasks of Chapter #3:    ***\n")
   }
 }

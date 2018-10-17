@@ -26,5 +26,6 @@ object TestTasks {
     T3_4_SignSort().perform
     T3_5_AverageOfArrayValues().perform
     T3_6_ReverseOrder().perform
+    T3_7_DistinctValuesFromArray().prform
   }
 }

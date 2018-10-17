@@ -14,4 +14,8 @@ trait RandomTools {
   def mkBuff(size: Int, rangeTo: Int = 10, rangeFrom: Int = 0): Buffer[Int] = {
     mkArray(size, rangeTo, rangeFrom).toBuffer
   }
+
+  def toStr[B <: Any](arr: Array[B]): String = {
+    arr.mkString(", ")
+  }
 }

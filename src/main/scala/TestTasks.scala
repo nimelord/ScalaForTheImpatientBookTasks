@@ -29,6 +29,7 @@ object TestTasks {
     T3_7_DistinctValuesFromArray().prform
     T3_8_RemoveNegativeValuesExceptFirst().perform
     T3_10_AmericaTimeZones().perform
+    T3_11_FlavorMap().perform
   }
 
   def printChapter(num: Int) {

@@ -1,7 +1,7 @@
 package t3
 
 import t3.T3_7_DistinctValuesFromArray._
-import util.ArrayTools
+import util.SeqTools
 
 object T3_7_DistinctValuesFromArray {
 
@@ -12,7 +12,7 @@ object T3_7_DistinctValuesFromArray {
   def apply(): T3_7_DistinctValuesFromArray = new T3_7_DistinctValuesFromArray
 }
 
-class T3_7_DistinctValuesFromArray extends ArrayTools {
+class T3_7_DistinctValuesFromArray extends SeqTools {
 
   def prform: Unit = {
     val src = mkArray(15, 4)

@@ -1,7 +1,7 @@
 package t3
 
 import t3.T3_6_ReverseOrder._
-import util.ArrayTools
+import util.SeqTools
 
 import scala.collection.mutable
 
@@ -18,7 +18,7 @@ object T3_6_ReverseOrder {
   def apply(): T3_6_ReverseOrder = new T3_6_ReverseOrder
 }
 
-class T3_6_ReverseOrder extends ArrayTools {
+class T3_6_ReverseOrder extends SeqTools {
 
   def perform: Unit = {
     val arr = mkArray(6)

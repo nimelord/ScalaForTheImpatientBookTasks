@@ -3,7 +3,7 @@ package util
 import scala.collection.GenTraversableOnce
 import scala.collection.mutable.Buffer
 
-trait ArrayTools extends RandomTools {
+trait SeqTools extends RandomTools {
 
   def mkArray(size: Int, rangeTo: Int = 10, rangeFrom: Int = 0): Array[Int] = {
     (0 until size).map(_ => r.nextInt(rangeTo - rangeFrom) + rangeFrom).toArray

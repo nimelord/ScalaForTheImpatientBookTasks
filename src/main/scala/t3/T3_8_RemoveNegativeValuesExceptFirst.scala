@@ -1,7 +1,7 @@
 package t3
 
 import t3.T3_8_RemoveNegativeValuesExceptFirst._
-import util.ArrayTools
+import util.SeqTools
 
 import scala.collection.mutable.Buffer
 
@@ -18,12 +18,12 @@ object T3_8_RemoveNegativeValuesExceptFirst {
   def apply(): T3_8_RemoveNegativeValuesExceptFirst = new T3_8_RemoveNegativeValuesExceptFirst
 }
 
-class T3_8_RemoveNegativeValuesExceptFirst extends ArrayTools {
+class T3_8_RemoveNegativeValuesExceptFirst extends SeqTools {
 
   def perform: Unit = {
     val buff = mkBuff(20, 6, -5)
     val src = toStr(buff)
     removeNegatives(buff)
-    print(s"The buff($src) was processed to buff(${toStr(buff)})")
+    println(s"The buff($src) was processed to buff(${toStr(buff)})")
   }
 }

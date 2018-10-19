@@ -1,5 +1,6 @@
 import t2._
 import t3._
+import t4.T4_1_PricesDiscount
 
 object TestTasks {
 
@@ -8,6 +9,7 @@ object TestTasks {
     println("Welcome to the Scala world!")
     runChapter2Tasks
     runChapter3Tasks
+    runChapter4Tasks
   }
 
   def runChapter2Tasks {
@@ -32,7 +34,12 @@ object TestTasks {
     T3_11_FlavorMap().perform
   }
 
+  def runChapter4Tasks {
+    printChapter(4)
+    T4_1_PricesDiscount().perform
+  }
+
   def printChapter(num: Int) {
-    println("\n\n\n    ***    Tasks of Chapter #3:    ***\n")
+    println(s"\n\n\n    ***    Tasks of Chapter #$num:    ***\n")
   }
 }

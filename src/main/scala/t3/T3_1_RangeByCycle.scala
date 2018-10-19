@@ -3,6 +3,7 @@ package t3
 import t3.T3_1_RangeByCycle._
 
 import scala.collection.immutable._
+import scala.util.Random
 
 object T3_1_RangeByCycle {
 
@@ -15,7 +16,7 @@ object T3_1_RangeByCycle {
 
 class T3_1_RangeByCycle {
 
-  val r = new util.Random(System.currentTimeMillis)
+  val r = new Random(System.currentTimeMillis)
 
   def perform {
     val from = 0

@@ -8,4 +8,5 @@ logBuffered in Test := false
 
 libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.5"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test"
+libraryDependencies += "commons-io" % "commons-io" % "2.6"
 

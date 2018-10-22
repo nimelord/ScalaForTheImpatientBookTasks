@@ -3,16 +3,15 @@ package t4
 import util.FileTools
 import java.util
 
-import scala.collection.JavaConverters._
-import scala.collection.SortedMap
-import scala.collection.mutable.Map
+import scala.collection.JavaConversions._
+import scala.collection.{SortedMap, mutable}
 
-object T4_2_3_4_StatisticsOfWordsFromFile extends FileTools {
+object T4_2_3_4_5_StatisticsOfWordsFromFile extends FileTools {
 
 
-  def statisticsFrom(fileName: String): Map[String, Int] = {
+  def statisticsFrom(fileName: String): mutable.Map[String, Int] = {
     val file = loadFile(fileName)
-    val result = Map[String, Int]()
+    val result = mutable.Map[String, Int]()
     for (f <- file.split("\n")) yield {
       val counter = result.getOrElse(f, 0)
       result(f) = counter + 1
@@ -30,21 +29,24 @@ object T4_2_3_4_StatisticsOfWordsFromFile extends FileTools {
   }
 
   def sortedStatisticsFrom(fileName: String): SortedMap[String, Int] = {
-    val map = new util.TreeMap[String, Int]();
-    val file = loadFile(fileName)
-    for (f <- file.split("\n")) yield {
-      val count = map.get(f)
-      map.put(f, if (count != 0) count + 1 else 1)
-    }
-    scala.collection.immutable.SortedMap[String, Int]() ++ map.asScala
+    scala.collection.immutable.SortedMap[String, Int]() ++ immutableStatisticsFrom(fileName)
   }
 
-  def apply(): T4_2_3_4_StatisticsOfWordsFromFile = new T4_2_3_4_StatisticsOfWordsFromFile
+  def treeMapStatisticsFrom(fileName: String): mutable.Map[String, Int] = {
+    val map: mutable.Map[String, Int] = new util.TreeMap[String, Int]
+    val file = loadFile(fileName)
+    for (f <- file.split("\n")) yield {
+      map.put(f, map.getOrElse(f, 0) + 1)
+    }
+    map
+  }
+
+  def apply(): T4_2_3_4_5_StatisticsOfWordsFromFile = new T4_2_3_4_5_StatisticsOfWordsFromFile
 }
 
-class T4_2_3_4_StatisticsOfWordsFromFile {
+class T4_2_3_4_5_StatisticsOfWordsFromFile {
 
-  import t4.T4_2_3_4_StatisticsOfWordsFromFile._
+  import t4.T4_2_3_4_5_StatisticsOfWordsFromFile._
 
   def perform: Unit = {
     val file = "words.txt"
@@ -54,5 +56,7 @@ class T4_2_3_4_StatisticsOfWordsFromFile {
     println(s"Word statistics in file($file) is immutable: $immutableStats.")
     val sortedStats = sortedStatisticsFrom(file)
     println(s"Word statistics in file($file) is sorted: $sortedStats.")
+    val treeStats = treeMapStatisticsFrom(file)
+    println(s"Word statistics in file($file) is treeMap: $treeStats.")
   }
 }

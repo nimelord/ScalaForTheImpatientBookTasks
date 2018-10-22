@@ -1,6 +1,6 @@
 import t2._
 import t3._
-import t4.{T4_1_PricesDiscount, T4_2_3_4_5_StatisticsOfWordsFromFile}
+import t4.{T4_1_PricesDiscount, T4_2_3_4_5_StatisticsOfWordsFromFile, T4_6_DayCalendar}
 
 object TestTasks {
 
@@ -38,6 +38,7 @@ object TestTasks {
     printChapter(4)
     T4_1_PricesDiscount().perform
     T4_2_3_4_5_StatisticsOfWordsFromFile().perform
+    T4_6_DayCalendar().perform
   }
 
   def printChapter(num: Int) {

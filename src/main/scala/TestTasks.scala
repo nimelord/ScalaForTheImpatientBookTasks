@@ -1,6 +1,7 @@
 import t2._
 import t3._
 import t4._
+import t5.T5_1_MaxValueCounter
 
 object TestTasks {
 
@@ -10,6 +11,7 @@ object TestTasks {
     runChapter2Tasks
     runChapter3Tasks
     runChapter4Tasks
+    runChapter5Tasks
   }
 
   def runChapter2Tasks {
@@ -41,6 +43,11 @@ object TestTasks {
     T4_6_DayCalendar().perform
     T4_7_PropertyTable().perform
     T4_8_9_TupleStatResult().perform
+  }
+
+  def runChapter5Tasks: Unit = {
+    printChapter(5)
+    T5_1_MaxValueCounter().perform
   }
 
   def printChapter(num: Int) {

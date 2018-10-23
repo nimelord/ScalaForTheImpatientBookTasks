@@ -36,7 +36,7 @@ class T4_8_9_TupleStatResult extends SeqTools {
   def perform: Unit = {
     val arr0 = Array(-2, 5, 7, 3, -4, 19, 55, -10)
     val t2 = T4_8_9_TupleStatResult.minmax(arr0)
-    println(s"For arr(${toStr(arr0)}) min-max is ${t2}")
+    println(s"For arr(${toStr(arr0)}) minutes-max is ${t2}")
 
     val arr1 = Array(-4, 3, -7, -10, 3, 18, 19, 3, -10)
     val t3 = T4_8_9_TupleStatResult.lteqgt(arr1, 3)

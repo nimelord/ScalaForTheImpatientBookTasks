@@ -5,7 +5,7 @@ import util.TupleValidator
 
 class T4_8_9_TupleStatResultSpec extends FlatSpec with TupleValidator {
 
-  "TupleStatResult" should "return min-max result" in {
+  "TupleStatResult" should "return minutes-max result" in {
     val arr = Array(-2, 5, 7, 3, -4, 19, 55, -10)
     val t = T4_8_9_TupleStatResult.minmax(arr)
     validate(t, -10, 55)

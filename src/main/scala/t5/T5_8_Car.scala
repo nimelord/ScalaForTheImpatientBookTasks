@@ -2,6 +2,8 @@ package t5
 
 object T5_8_Car {
 
+  val DEFAULT_YEAR = -1
+
   def perform: Unit = {
     val car0 = new T5_8_Car("Opel", "Zafira", 1999, "GPL")
     println(s"The Car0: $car0.")
@@ -14,18 +16,12 @@ object T5_8_Car {
   }
 }
 
-class T5_8_Car(val manufacturer: String, val model: String, val year: Int, val license: String) {
 
-  def this(manufacturer: String, model: String, year: Int) {
-    this(manufacturer, model, year, "")
-  }
+class T5_8_Car(val manufacturer: String, val model: String, val year: Int = T5_8_Car.DEFAULT_YEAR, val license: String = "") {
+
 
   def this(manufacturer: String, model: String, license: String) {
-    this(manufacturer, model, -1, license)
-  }
-
-  def this(manufacturer: String, model: String) {
-    this(manufacturer, model, -1, "")
+    this(manufacturer, model, T5_8_Car.DEFAULT_YEAR, license)
   }
 
   override def toString: String = {

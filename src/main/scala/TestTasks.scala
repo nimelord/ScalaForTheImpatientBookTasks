@@ -52,6 +52,7 @@ object TestTasks {
     T5_3_4_Time.perform
     T5_5_Student.perform
     T5_7_Person.perform
+    T5_8_Car.perform
   }
 
   def printChapter(num: Int) {

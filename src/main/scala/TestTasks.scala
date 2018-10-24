@@ -1,7 +1,7 @@
 import t2._
 import t3._
 import t4._
-import t5.{T5_1_6_MaxValueCounter, T5_2_BankAccount, T5_3_4_Time, T5_5_Student}
+import t5._
 
 object TestTasks {
 
@@ -51,6 +51,7 @@ object TestTasks {
     T5_2_BankAccount.perform
     T5_3_4_Time.perform
     T5_5_Student.perform
+    T5_7_Person.perform
   }
 
   def printChapter(num: Int) {

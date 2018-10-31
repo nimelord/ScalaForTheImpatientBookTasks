@@ -2,6 +2,7 @@ import t2._
 import t3._
 import t4._
 import t5._
+import t6.T6_1_Conversions
 
 object TestTasks {
 
@@ -12,6 +13,7 @@ object TestTasks {
     runChapter3Tasks
     runChapter4Tasks
     runChapter5Tasks
+    runChapter6Tasks
   }
 
   def runChapter2Tasks {
@@ -53,6 +55,11 @@ object TestTasks {
     T5_5_Student.perform
     T5_7_Person.perform
     T5_8_Car.perform
+  }
+
+  def runChapter6Tasks: Unit = {
+    printChapter(6)
+    T6_1_Conversions.perform
   }
 
   def printChapter(num: Int) {

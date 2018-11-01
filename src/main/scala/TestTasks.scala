@@ -2,7 +2,7 @@ import t2._
 import t3._
 import t4._
 import t5._
-import t6.{T6_1_Conversions, T6_6_7_CardSuit}
+import t6.{T6_1_Conversions, T6_6_7_CardSuit, T6_8_ColorCube}
 
 object TestTasks {
 
@@ -61,6 +61,7 @@ object TestTasks {
     printChapter(6)
     T6_1_Conversions.perform
     T6_6_7_CardSuit.perform
+    T6_8_ColorCube.perform
   }
 
   def printChapter(num: Int) {
